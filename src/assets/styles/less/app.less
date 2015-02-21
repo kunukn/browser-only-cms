@@ -2,8 +2,10 @@
 @small: ~" (min-width: 768px)";
 @medium: ~" (min-width: 992px)";
 @large: ~" (min-width: 1200px)";
+
 @light: #eee;
 @size: 100px;
+
 .background-linear(@from, @to) {
     background-color: @from;
     background: -webkit-linear-gradient(@from, @to);
@@ -11,6 +13,7 @@
     background: -moz-linear-gradient(@from, @to);
     background: linear-gradient(@from, @to);
 }
+
 * {
     box-sizing: border-box;
     margin: 0;

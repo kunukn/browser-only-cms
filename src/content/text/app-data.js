@@ -1,7 +1,8 @@
 var Site = Site || {};
 
 (function() {
-    var data = {
+    Site.data = {
+
         multiline: function() {
             /*!
                 I am a multiline text <br>
@@ -9,14 +10,16 @@ var Site = Site || {};
                 This is the third
             !*/
         }.extractComment(),
-        items: [{
+
+        items: [
+        {
             type: 'apple',
             text: function() {
                 /*!
                     <i>green</i>
                 !*/
             }.extractComment()
-        }, {
+        },{
             type: 'orange'
         }, {
             type: 'banana'
@@ -54,7 +57,7 @@ var Site = Site || {};
             type: 'tomato'
         }, {
             type: 'silver'
-        }]
+        }
+        ]
     }
-    Site.data = data;
 })();
