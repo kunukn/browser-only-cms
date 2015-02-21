@@ -1,5 +1,6 @@
 + function setupPrototypeFunctions() {
-    Function.prototype.extractComment = function() {
+
+    var parseComment = function() {
         var startComment = "/*!",
             endComment = "!*/",
             stringWithComment = this.toString(),
@@ -17,4 +18,16 @@
 
         return stringWithComment.slice(startIndex + startComment.length, -(stringWithComment.length - endIndex));
     };
+
+    if (!Function.prototype.parse) {
+        Function.prototype.parse = parseComment;
+    }
+
+    if (!Function.prototype.parseMarkdown) {
+        Function.prototype.parseMarkdown = function() {
+            var string = parseComment.call(this);
+            return markdown.toHTML(string);
+        }
+    }
+
 }();
