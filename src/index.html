@@ -14,11 +14,14 @@
 
 <body>
     <section class='spots-section clearfix' data-bind='foreach: spots'>
-        <div class='spot' data-bind="css: type"></div>
+        <div class='spot' data-bind="css: type, if: $data.text">
+            <span data-bind="html: text"></span>
+        </div>
     </section>
 
     <script src='assets/scripts/library/knockout-3.2.0.min.js'></script>
     <script src='assets/scripts/library/knockout.mapping-2.4.1.js'></script>
+    <script src='assets/scripts/app/app-core.js'></script>
     <script src='content/app-data.js'></script>
     <script src='assets/scripts/app/run-app.js'></script>
 
