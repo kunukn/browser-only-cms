@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <section class='multiline-section' data-bind='html: multiline'></section>
+
     <section class='spots-section clearfix' data-bind='foreach: spots'>
         <div class='spot' data-bind="css: type, if: $data.text">
             <span data-bind="html: text"></span>
@@ -21,10 +23,14 @@
 
     <script src='assets/scripts/library/knockout-3.2.0.min.js'></script>
     <script src='assets/scripts/library/knockout.mapping-2.4.1.js'></script>
-    <script src='assets/scripts/app/app-core.js'></script>
-    <script src='content/text/app-data.js'></script>
-    <script src='assets/scripts/app/run-app.js'></script>
+    <script src='assets/scripts/library/markdown.min.js'></script>
 
+    <script src='assets/scripts/app/app-core.js'></script>
+    <script>
+    document.write('<script src="content/text/app-data.js?nocache-' + new Date().getTime() + '">\x3C/script>');
+    document.write('<script src="assets/scripts/app/run-app.js?nocache-' + new Date().getTime() + '">\x3C/script>');
+    </script>
 </body>
 
 </html>
+

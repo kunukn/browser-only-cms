@@ -2,6 +2,13 @@ var Site = Site || {};
 
 (function() {
     var data = {
+        multiline: function() {
+            /*!
+                I am a multiline text <br>
+                This is the second line <br>
+                This is the third
+            !*/
+        }.extractComment(),
         items: [{
             type: 'apple',
             text: function() {
