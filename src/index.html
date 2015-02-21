@@ -9,11 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="browser only cms">
     <meta name="author" content="kunukn">
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/app.css">
 </head>
 
 <body>
-    <div class='body'>
-    </div>
+    <section class='spots-section clearfix' data-bind='foreach: spots'>
+        <div class='spot' data-bind="css: type"></div>
+    </section>
+
+    <script src='assets/scripts/library/knockout-3.2.0.min.js'></script>
+    <script src='assets/scripts/library/knockout.mapping-2.4.1.js'></script>
+    <script src='content/app-data.js'></script>
+    <script src='assets/scripts/app/run-app.js'></script>
+
 </body>
 
 </html>
