@@ -1,8 +1,8 @@
 # browser only cms
 
-Dependencies. Any modern browser and your favorite text editor.
+**Dependencies:** any modern browser and your favorite text editor.
 
-Open the index.html with any modern browser.
+Open the index.html with your browser.
 
   * Your browser is the server
   * Your database and media library is the content folder
