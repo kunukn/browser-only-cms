@@ -12,6 +12,9 @@ body {
   font-size: 140%;
   margin-bottom: 10px;
 }
+.multiline-section code {
+  background: black;
+}
 .spots-section {
   margin: 0 auto;
   padding: 4px;
