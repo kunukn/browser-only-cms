@@ -27,45 +27,30 @@ To edit the content open the `content/text/app-data.js` file and refresh your br
                     <i>green</i>
                 !*/
             }.parse()
-        },{
-            type: 'orange'
-        }, {
-            type: 'banana'
-        }, {
-            type: 'tomato'
-        }, {
-            type: 'silver'
-        }, {
-            type: 'apple'
-        }, {
-            type: 'orange'
-        }, {
-            type: 'banana'
-        }, {
-            type: 'tomato'
-        }, {
-            type: 'silver'
-        }, {
-            type: 'apple'
-        }, {
-            type: 'orange'
-        }, {
-            type: 'banana'
-        }, {
-            type: 'tomato'
-        }, {
-            type: 'silver'
-        }, {
-            type: 'apple'
-        }, {
-            type: 'orange'
-        }, {
-            type: 'banana'
-        }, {
-            type: 'tomato'
-        }, {
-            type: 'silver'
-        }
+        },
+        { type: 'orange'},
+        { type: 'banana'},
+        { type: 'tomato'},
+        { type: 'silver'},
+        { type: 'apple'},
+
+        { type: 'orange'},
+        { type: 'banana'},
+        { type: 'tomato'},
+        { type: 'silver'},
+        { type: 'apple'},
+
+        { type: 'orange'},
+        { type: 'banana'},
+        { type: 'tomato'},
+        { type: 'silver'},
+        { type: 'apple'},
+
+        { type: 'orange'},
+        { type: 'banana'},
+        { type: 'tomato'},
+        { type: 'silver'},
+        { type: 'apple'}
         ]
     }
 })();
