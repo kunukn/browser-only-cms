@@ -4,21 +4,28 @@
 }
 body {
   background-color: #333;
+  margin: 10px;
 }
 .multiline-section {
+  float: left;
   color: white;
   margin: 0 auto;
-  padding: 4px;
+  padding: 10px;
   font-size: 140%;
   margin-bottom: 10px;
+}
+.multiline-section .multiline-image {
+  max-width: 100%;
+  height: auto;
 }
 .multiline-section code {
   background: black;
 }
 .spots-section {
   margin: 0 auto;
-  padding: 4px;
+  padding: 10px;
   position: relative;
+  float: left;
 }
 .spot {
   text-align: center;

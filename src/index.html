@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <section class='multiline-section' data-bind='html: multiline'></section>
+    <section class='multiline-section'>
+        <div data-bind='html: multiline'></div>
+        <img src="#" class='multiline-image' data-bind="attr {src: 'content/media/building.jpg'}">
+    </section>
 
     <section class='spots-section clearfix' data-bind='foreach: spots'>
         <div class='spot' data-bind="css: type, if: $data.text">
@@ -33,4 +36,3 @@
 </body>
 
 </html>
-

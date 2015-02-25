@@ -19,6 +19,8 @@ To edit the content open the `content/text/app-data.js` file and refresh your br
             !*/
         }.parseMarkdown(),
 
+        image: 'content/media/building.jpg',
+
         items: [
         {
             type: 'apple',
