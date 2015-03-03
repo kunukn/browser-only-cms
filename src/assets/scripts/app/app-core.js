@@ -1,4 +1,4 @@
-+ function setupPrototypeFunctions() {
+(function setupPrototypeFunctions() {
 
     var parseComment = function() {
         var startComment = "/*!",
@@ -30,4 +30,4 @@
         }
     }
 
-}();
+})();

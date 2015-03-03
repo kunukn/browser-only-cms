@@ -13,9 +13,10 @@
 </head>
 
 <body>
+
     <section class='multiline-section'>
         <div data-bind='html: multiline'></div>
-        <img src="#" class='multiline-image' data-bind="attr {src: 'content/media/building.jpg'}">
+        <img src="#" class='multiline-image' data-bind="attr: {src: 'content/media/building.jpg'}">
     </section>
 
     <section class='spots-section clearfix' data-bind='foreach: spots'>
@@ -33,6 +34,7 @@
     document.write('<script src="content/text/app-data.js?nocache-' + new Date().getTime() + '">\x3C/script>');
     document.write('<script src="assets/scripts/app/run-app.js?nocache-' + new Date().getTime() + '">\x3C/script>');
     </script>
+
 </body>
 
 </html>
